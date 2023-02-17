@@ -7,12 +7,7 @@ public class view {
     private JButton WoahButton;
     private JPanel Jpanel;
 
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("view");
-        frame.setContentPane(new view().Jpanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+    public JPanel getJpanel() {
+        return Jpanel;
     }
 }
