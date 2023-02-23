@@ -5,5 +5,6 @@ public class Main {
         model m = new model("10.80.47.216",1234);
         view v = new view();
         controller c = new controller(m, v);
+
     }
 }

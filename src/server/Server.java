@@ -53,7 +53,7 @@ public class Server {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Server s = new Server(6240);
+        Server s = new Server(1234);
         s.acceptClient();
         s.getStreams();
         ListenerThread l = new ListenerThread(s.in, System.out);
