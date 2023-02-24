@@ -23,7 +23,7 @@ public class model {
         System.out.println("Connection ready...");
     }
 
-    private void getStreams() {
+    public void getStreams() {
         try {
             out = new PrintWriter(socket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -33,13 +33,20 @@ public class model {
         System.out.println("Streams ready...");
     }
 
-    private void runProtocol() {
+    public void runProtocol() {
         Scanner tgb = new Scanner(System.in);
         System.out.println("chatting...");
         String msg = "";
         while (!msg.equals("QUIT")) {
             msg = tgb.nextLine();
             out.println("CLIENT: " + msg);
+        }
+    }
+    public void shutDown() {
+        try {
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -52,13 +59,5 @@ public class model {
         me.runProtocol();
         listener.join();
         me.shutDown();
-    }
-
-    private void shutDown() {
-        try {
-            socket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }
