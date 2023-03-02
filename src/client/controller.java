@@ -1,6 +1,9 @@
 package client;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Scanner;
 
 public class controller {
     private model c;
@@ -13,5 +16,13 @@ public class controller {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        
+        v.getYoButton().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String msg = v.getInput().getText();
+                m.out.println("CLIENT: " + msg);
+            }
+        });
     }
 }
