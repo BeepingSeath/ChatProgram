@@ -9,3 +9,5 @@ V.7 Tor: Har skapat en view och försökt få Controller att göra saker men det
 v.7 Fre: Har gjort en main och kopplat ihop Controller, Model och View. Det jag ska göra nu är programmera min model så att den interagerar med view.
 
 v.8 Tor: Jag har försökt förstå hur man ska få server och klient att prata med varandra men det funkar inte. 
+
+v.9 Tor: Jag har gjort så att man kan använda view för att skicka meddelanden till servern. Meddelanden kommer fortfarande i terminal istället för en view så jag ska jobba på det nästa gång.
