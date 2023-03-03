@@ -7,8 +7,12 @@ import java.awt.event.ActionListener;
 public class view {
     private JButton YoButton;
     private JPanel Jpanel;
-    private JTextArea textArea1;
+    private JTextArea Chat;
     private JTextField Input;
+
+    public JTextArea getChat() {
+        return Chat;
+    }
 
     public JTextField getInput() {
         return Input;

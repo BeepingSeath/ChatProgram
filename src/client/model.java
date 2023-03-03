@@ -51,7 +51,7 @@ public class model {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        model me = new model("10.80.44.255", 6240);
+        model me = new model("10.80.45.132", 413);
         me.getStreams();
         ListenerThread l = new ListenerThread(me.in, System.out);
         Thread listener = new Thread(l);

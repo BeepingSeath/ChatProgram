@@ -21,7 +21,7 @@ public class controller {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String msg = v.getInput().getText();
-                m.out.println("CLIENT: " + msg);
+                v.getChat().append("CLIENT: " + msg);
             }
         });
     }
